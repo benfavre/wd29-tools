@@ -1,5 +1,5 @@
-import app from './src/app'
-import { getFreePort } from './src/utils/helpers'
+import app from '@/app'
+import { getFreePort } from '@/utils/helpers'
 if (!process.env.PORT) {
     process.env.PORT = await getFreePort(3000) as unknown as string        
 }

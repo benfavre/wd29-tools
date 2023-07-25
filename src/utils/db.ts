@@ -3,7 +3,6 @@ import { Database } from "bun:sqlite";
 const queue = new Database("queue.sqlite", { create: true });
 const stats = new Database("stats.sqlite", { create: true });
 
-
 const bootQueue = () => {
     console.log('bootQueue');
     // queue.run(`create table task_queue;`);

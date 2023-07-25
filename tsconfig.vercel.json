@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": false,
+      "esModuleInterop": true,
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "outDir": "public",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "incremental": true,
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./*"]
+      },
+      "types": [
+        "bun-types" // add Bun global
+      ]
+    },
+    "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx"],
+    "exclude": ["node_modules"]
+  }

@@ -168,6 +168,3 @@ dist
 .yarn/install-state.gz
 .pnp.\*
 
-# ignore "public" folder in the root of the monorepo
-
-/public

@@ -1,17 +1,26 @@
 {
+    "name": "wd29-tools",
     "version": 2,
+    "public": true,
     "builds": [
-      { "src": "npm run build", "use": "@vercel/node" }
+        {
+          "src": "src/index-vercel.ts",
+          "use": "@vercel/node"
+        }
     ],
     "routes": [
-      {
-        "src": "/public/(.*)",
-        "dest": "/public/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/dist/$1"
-      }
+        {
+            "src": "/robots.txt",
+            "status": 204
+          },
+          {
+            "src": "/favicon.ico",
+            "status": 204
+          },
+          {
+            "src": "/(.*)",
+            "dest": "/src/index-vercel.ts"
+          }
     ]
   }
   

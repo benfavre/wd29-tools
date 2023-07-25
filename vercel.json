@@ -4,7 +4,7 @@
     "public": true,
     "builds": [
         {
-          "src": "src/index-vercel.ts",
+          "src": "src/index.ts",
           "use": "@vercel/node"
         }
     ],
@@ -19,7 +19,7 @@
           },
           {
             "src": "/(.*)",
-            "dest": "/src/index-vercel.ts"
+            "dest": "/src/index.ts"
           }
     ]
   }

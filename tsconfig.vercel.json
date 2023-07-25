@@ -10,7 +10,7 @@
       "esModuleInterop": true,
       "module": "CommonJS",
       "moduleResolution": "node",
-      "outDir": "public",
+      "outDir": "dist",
       "resolveJsonModule": true,
       "isolatedModules": true,
       "jsx": "preserve",
